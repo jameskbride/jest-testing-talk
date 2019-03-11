@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {shallow} from 'enzyme'
+import {mount} from 'enzyme'
 
 import App from './App'
 import Hello from './Hello'
@@ -10,7 +10,7 @@ describe('App', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(<App />)
+    wrapper = mount(<App />)
   })
 
   it('renders without crashing', () => {
@@ -33,5 +33,9 @@ describe('App', () => {
     wrapper.find('#change-button').first().simulate('click')
 
     expect(wrapper.text()).toContain('Learn Jest')
+  })
+
+  it('displays Hello, world!', () => {
+    expect(wrapper.text()).toContain('Hello, world!')
   })
 })
