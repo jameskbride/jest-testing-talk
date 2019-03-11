@@ -37,6 +37,6 @@ describe('App', () => {
   })
 
   it('cannot render child components', () => {
-    expect(wrapper.text()).not.toContain('Hello, world!')
+    expect(wrapper.text()).not.toContain('Hello, Beam')
   })
 })

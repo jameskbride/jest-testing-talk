@@ -36,6 +36,6 @@ describe('App', () => {
   })
 
   it('displays Hello, world!', () => {
-    expect(wrapper.text()).toContain('Hello, world!')
+    expect(wrapper.text()).toContain('Hello, World')
   })
 })
