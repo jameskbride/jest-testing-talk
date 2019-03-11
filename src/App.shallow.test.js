@@ -4,7 +4,6 @@ import {shallow} from 'enzyme'
 
 import App from './App'
 import Hello from './Hello'
-import { notDeepEqual } from 'assert';
 
 describe('App', () => {
 
